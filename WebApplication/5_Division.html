@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Division</title>
+</head>
+<body>
+    <p>
+        Division; div olarak kısaltılır. Asıl görevi, birbirinden bağımsız çalışan parçalanmış, görselli ve kontrolü ayrı ayrı olabilen tasarımsal alanlardır.
+    </p>
+
+    <p>
+        Temel Kavramlar;
+        <ul>
+            <li>id=> Her id elementin kendisine hastır. Yani bir id yalnızca bir kez kullanılabilmektedir. Id'ye yazdığımız her stil yalnızca o elemanı ilgilendirir.</li>
+            <li>class (sınıf) => kullandığımız html elementleri için sınıfta tanımlayabiliriz ve olmasını istediğimiz ortak stil özelliklerini bu sınıfta tanımlarız. Birsınıf çokça html elementi tarafından kullanılabilir. ID den bu yönüyle farlıdır.</li>
+            <li>id => #isim olaraki class => .isim olarak kullanılır</li>
+            <li>width => elementin genişliği</li>
+            <li>height => elemendin yüksekliği</li>
+            <li>margin-left=> bir elementin sol taraftan dış çerçeveye olan mesafesi</li>
+            <li>margin-right=> bir elementin sağ taraftan dış çerçeveye olan mesafesi</li>
+            <li>NOT => bir elementin margin-right ve margin-left değerlerini auto olarak kullanırsak ekran çözünürlüğümüze göre ilgili yaz/elementin sağ-sol mesafesi aynnı olaracak </li>
+            <li>float=> ilgili tasarımsal alanın hangi yöne dayalı olacağını belirtir. Varsayılan olarak div boyutu ne olursa olsun, o yükseklikteki alanı satır boyunca kapsadığını düşünür. Yani birden fazla divi yan yana getirmek istersek floata değer atamalıyız</li>
+        </ul>
+    </p>
+
+    <br />
+    <br />
+    <hr />
+
+    <div id="mainContainer" style="width:700px;height:600px;margin-left:auto;margin-right:auto">
+
+        <div style="width:700px;height:50px;background-color:#7d57de;">
+            aaa
+        </div>
+        <div style="width:500px;height:450px;background-color:#18c8be">
+            bbb
+        </div>
+        <div style="width:200px;height:450px;background-color:#1323d4">
+            ccc
+        </div>
+    </div>
+</body>
+</html>
