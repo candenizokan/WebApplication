@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{5D8E83F4-EF12-46B8-B1D2-B1CC33E3E0C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootstrapKutuphanesi", "BootstrapKutuphanesi\BootstrapKutuphanesi.csproj", "{B158CA24-D1ED-4181-8949-34BF2F842B78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapKutuphanesi", "BootstrapKutuphanesi\BootstrapKutuphanesi.csproj", "{B158CA24-D1ED-4181-8949-34BF2F842B78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JavaScript", "JavaScript\JavaScript.csproj", "{C1C431DD-511A-4F09-9138-1AE456561A09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B158CA24-D1ED-4181-8949-34BF2F842B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B158CA24-D1ED-4181-8949-34BF2F842B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B158CA24-D1ED-4181-8949-34BF2F842B78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1C431DD-511A-4F09-9138-1AE456561A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1C431DD-511A-4F09-9138-1AE456561A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1C431DD-511A-4F09-9138-1AE456561A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1C431DD-511A-4F09-9138-1AE456561A09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
