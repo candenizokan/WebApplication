@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <input type="button" class="btn btn-outline-primary offset-4 col-md-4" value="SEÇ !" id="b1"/>
+    </div>
+
+    <script>
+        var replikHavuzu = ["Bakarsan bağ, bakmazsan dağ olur", "Bu bizimki sevda değil", "Bilemiyorum..", "Yaz dostum güzel sevmeyene adam denir mi?", "Gidelim Buralardan", "Yurtta sulh cihanda sulh"];
+
+        //yukarıdaki butona her tıklandığında aşağıda tanımlanmış olan havuzdan rondom bir replik alert ile gösterilsin.
+
+        $(document).ready(function () {
+            // Butona tıklandığında
+            $("#b1").click(function () {
+                // Replik havuzundan rastgele bir replik seç
+                var randomIndex = Math.floor(Math.random() * replikHavuzu.length);
+                console.log(randomIndex);
+                var randomReplik = replikHavuzu[randomIndex];
+
+                // Alert ile repliği göster
+                alert(randomReplik);
+            });
+        });
+    </script>
+</body>
+</html>
