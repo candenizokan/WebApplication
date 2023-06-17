@@ -9,6 +9,30 @@
     <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container mt-3">
+        <button id="buton" class="btn btn-outline-danger offset-4 col-md-4">Renk Değiştir</button>
 
+        <!--Butone her basıldığında sayfa gövesi rasgele renk ile boyansın-->
+    </div>
+
+    <script>
+        //RGB(0,0,0)--------->RGB(255,255,255)
+        //Math.Rondom()= 0 dahil 1 hariç arasında bir değer verir
+
+        
+
+        $('#buton').click(function ()
+        {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+
+            var renk = "rgb(" + r + "," + g + "," + b + ")"; //rgb(20,23,55)
+
+            $('body').css("backgroundColor", renk);
+
+        })
+
+    </script>
 </body>
 </html>
