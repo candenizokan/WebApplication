@@ -31,13 +31,29 @@
             //ORNEK 1 butonuna basıldığında bütün p etiketlerine merhaba yazalım.
             //#bir idsi bir olan element yakala, tıklandığında içinde fonsiyon var
             $('#bir').click(function () {
+                $('p').html(' ');//bütün p leri yakala sonra temizle sonra merhaba yaz
                 $('p').html('merhaba');//p'leri yahala. html sine merhaba yaz
             });
 
             ////ORNEK 2 butonuna basıldığında sadece id'si metin1 olan p'ye yazı yazalım
             $('#iki').click(function () {
+                $('p').html(' ');//bütün p leri yakala sonra temizle sonra cumartesi yaz
                 $('p#metin1').html('cumartesi');//id bilgisi metin 1 olan p yi seç $('p#metin1'). git bunun html'sine cumartesi yaz
-            })
+            });
+
+            //ORNEK 3 butonuna basıldığında lang özelliği tr olanları yakalayalım
+            $('#uc').click(function () {
+                $('p').html(' ');//bütün p leri yakala sonra temizle
+                $("p:lang(tr)").html('yakaladım');
+                $("p[lang=en]").html('okan');
+            });
+
+            //ORNEK 4 butonuna basıldığında langı en ve fr olan p leri yakalayalım
+            $('#dort').click(function () {
+                $('p').html(' ');//bütün p leri yakala sonra temizle
+                $("p:lang(en),p:lang(fr)").html('yakaladım');
+                //$("p[lang=en]").html('okan');
+            });
         })
 
     </script>
